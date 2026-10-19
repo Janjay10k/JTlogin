@@ -1,4 +1,7 @@
 pluginManagement {
+    // The 'libby' Gradle plugin (xyz.kyngs.libby.plugin 1.2.1) can no longer be downloaded, so a copy of its source is
+    // built from this repository instead. See build-plugins/libby-gradle-plugin/README-JTLOGIN.md.
+    includeBuild("build-plugins/libby-gradle-plugin")
     repositories {
         maven {
             url = uri("https://repo.kyngs.xyz/gradle-plugins")

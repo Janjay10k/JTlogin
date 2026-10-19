@@ -147,7 +147,7 @@ audit of LibreLogin.
 | Password strength | A regression I introduced (tiny bundled list) was found and fixed; the full list ships in the JAR. |
 | Network endpoints | Removed: update check, password-list download, bStats. A source guard test fails if these come back. Remaining outbound calls are the original's: Mojang session/profile APIs and the UUID/profile lookup services. |
 | Server internals | The only access is `ConnectionEncryption`. It fails loudly (kick plus log) rather than continuing without encryption if the connection class has an unknown shape. |
-| Supply chain | `libby` downloads runtime libraries from Maven repositories on first start, as before. Dependency versions were not changed except PacketEvents. Checksums and signatures were not verified. |
+| Supply chain | `libby` downloads runtime libraries from Maven repositories on first start, as before. Dependency versions were not changed except PacketEvents. The build plugin `xyz.kyngs.libby.plugin` 1.2.1 can no longer be downloaded, so its source is vendored unchanged under `build-plugins/libby-gradle-plugin` (MPL-2.0, see its README-JTLOGIN.md); that build has not been run either. Checksums and signatures were not verified. |
 | Not done | No penetration test, no fuzzing, no review of upstream code outside the diff, no verification that dependency coordinates resolve. |
 
 ## 9. Tests

@@ -17,6 +17,9 @@ The MPL requires that the source of modified files stays available under the sam
 - **FastLogin** (games647 and contributors): parts of the Paper port, notably `EncryptionUtil` and the login
   handshake handling, are derived from FastLogin. Its license is in [licenses/FASTLOGIN_LICENSE](licenses/FASTLOGIN_LICENSE).
 - **Raixo**: original BungeeCord port of LibrePremium.
+- **libby-gradle-plugin 1.2.1** (kyngs, MPL-2.0): a build tool that writes `libby.json`. Its published artifact can no longer be
+  downloaded, so its source is vendored unchanged in [build-plugins/libby-gradle-plugin](build-plugins/libby-gradle-plugin/README-JTLOGIN.md)
+  with its license. Only the generated `libby.json` ends up in the JTLogin jar.
 - Runtime libraries (ACF fork, HikariCP, JDBC drivers, Caffeine, Configurate, bcrypt, totp, BouncyCastle, Adventure,
   PacketEvents, ...) are downloaded by their original coordinates at first start and keep their own licenses.
 - The bundled `forbidden-passwords-full.txt` is the upstream list (see its header for its sources).

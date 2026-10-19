@@ -5,7 +5,7 @@ plugins {
     id("io.github.goooler.shadow") version "8.1.8"
     id("net.kyori.blossom").version("1.3.1")
     id("java-library")
-    id("xyz.kyngs.libby.plugin").version("1.2.1")
+    id("xyz.kyngs.libby.plugin") // vendored in build-plugins/libby-gradle-plugin, the published 1.2.1 can no longer be downloaded
 }
 
 tasks.withType<JavaCompile> {
