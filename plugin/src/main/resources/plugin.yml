@@ -1,0 +1,11 @@
+name: "JTLogin"
+author: "kyngs"
+description: "JTLogin - authentication plugin. A rebrand and port of LibreLogin by kyngs (MPL-2.0); contains code derived from FastLogin."
+version: '${version}'
+main: "jtlogin.paper.PaperBootstrap"
+api-version: 1.13
+
+softdepend:
+  - Geyser-Spigot
+  - floodgate
+  - LuckPerms
