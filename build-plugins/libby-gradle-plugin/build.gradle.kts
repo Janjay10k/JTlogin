@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.grack:nanojson:1.7")
+    implementation("com.grack:nanojson:1.10")
 
     // Only needed to compile ShadowPluginIntegration. At build time the shadow plugin of the consuming project is used.
     compileOnly("com.github.johnrengelman:shadow:8.1.1")
